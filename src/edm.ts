@@ -208,8 +208,7 @@ export namespace Edm {
         @parseAs(new AttributeFunctionChain( 
             (d, i) =>d.key, 
             (props, i) => props || [],
-            (props, i) => props.map(prop => new Key(prop, i)),
-            (props) => props[0]))
+            (props, i) => new Key({ propertyRefs: props}, i)))
         public key: Key;
         
         @parse

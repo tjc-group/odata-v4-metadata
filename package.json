@@ -1,6 +1,6 @@
 {
   "name": "@tjc-group/odata-v4-metadata",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "OData metadata utilities",
   "main": "lib/edm.js",
   "homepage": "https://github.com/tjc-group/odata-v4-metadata.git",

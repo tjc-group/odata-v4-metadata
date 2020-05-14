@@ -192,7 +192,7 @@ export namespace Edm {
 
     export class Key extends EdmItemBase {
 
-        @parseAs(mapArray("propertyRef", (prop, i) => new PropertyRef(prop, i)))
+        @parseAs(mapArray("propertyRefs", (prop, i) => new PropertyRef(prop.propertyRef[0], i)))
         public propertyRefs: Array<PropertyRef>
         //@arrayMinLength(1)    
     }
